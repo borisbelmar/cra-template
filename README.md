@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Getting Started with Create React App dobleB. template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is a template for a React project with the following features:
+
+-   [React](https://reactjs.org/)
+-   [Tailwind CSS](https://tailwindcss.com/)
+-   [Typescript](https://www.typescriptlang.org/)
+-   [Husky](https://typicode.github.io/husky/#/)
 
 ## Available Scripts
 
@@ -14,10 +19,18 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `yarn lint`
+
+Runs the linter. It will check for any linting errors and will fix them if possible. You can also run `yarn lint:fix` to fix all the errors automatically. You can modify the linting rules in the `.eslintrc.js` file.
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn precommit`
+
+Runs the linter and test runner before every commit. If there are any linting errors or failing tests, the commit will be aborted. You can modify the precommit script in the `package.json` file.
 
 ### `yarn build`
 
@@ -39,32 +52,16 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Config files
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `.eslintrc.js`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This file contains the linting rules for the project. You can modify the rules in this file. You can also run `yarn lint` to check for any linting errors and `yarn lint:fix` to fix all the errors automatically.
 
-### Code Splitting
+### `tailwind.config.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This file contains the Tailwind CSS configuration. You can modify the configuration in this file.
 
-### Analyzing the Bundle Size
+### `tsconfig.json`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This file contains the Typescript configuration. You can modify the configuration in this file.
